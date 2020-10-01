@@ -6,7 +6,7 @@ import User from '../models/User';
 const handleErrors = (err) => {
     let errors = { email: '', password: '' };
 
-    // incorrect email
+    // incorrect e-mail
     if (err.message.includes('incorrect email')) {
         errors.email = err.message;
         console.log("test", errors.email = err.message);
